@@ -3,18 +3,17 @@ import ContactList from './ContactList/ContactList';
 import './NavbarAndContactList.css';
 import VerticalNavbar from './VerticalNavbar/VerticalNavbar';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
-import FavContactList from './FavContactList/FavContactList';
 const NavbarAndContactList = () => {
   return (
     <div className='navbar-and-list'>
-      <Router>
+      <div className='navbar-and-list'>
+      <div className='vertical-navbar-section'>
       <VerticalNavbar />
-        <Routes>
-          <Route path='/' element={<ContactList />}></Route>
-          <Route path='/fav'element={<FavContactList/>}/>
-        </Routes>
-      </Router>
-      
+      </div>
+      <div className="contact-section">
+      <ContactList />
+      </div>
+    </div>
     </div>
   )
 }

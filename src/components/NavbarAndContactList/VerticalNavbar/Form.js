@@ -65,6 +65,7 @@ const Form = () => {
       <div className='add-new-img'>
         <img src={addnewImage}></img>
       </div>
+      <div className="form-container">
       <div className='input-text'>
         <input
           type='text'
@@ -94,6 +95,7 @@ const Form = () => {
           minLength={10}/>
       </div>
       <Button name='Add' />
+      </div>
     </form>
   )
 }

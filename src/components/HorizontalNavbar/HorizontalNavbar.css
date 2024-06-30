@@ -1,4 +1,5 @@
-.horizontal-nav {
+
+ .horizontal-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -11,20 +12,27 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    width: 200px;
+    width: 60%;
 }
 
-.profile-img-box {
-    width: 35px;
+.horizontal--pib {
+    width: 6%;
     height: 35px;
     margin-right: 15px;
-    border-radius: 50%;
+    border-radius: 15%;
     display: flex;
     align-items: center;
     border: 1px solid #646464;
 }
 
+.name{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
 .profile h2,
 .profile-img-box .fa-solid {
     color: #646464;
@@ -33,9 +41,11 @@
 .profile-img-box .fa-solid {
     margin-left: 10px;
 }
-
+.search-box{
+    width: 35%;
+}
 .search-box input[type=text] {
-    width: 300px;
+    width: 70%;
     height: 35px;
     margin: 5px;
     border: none;

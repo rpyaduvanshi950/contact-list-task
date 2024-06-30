@@ -9,14 +9,16 @@ const HorizontalNavbar = () => {
         <div className='profile-img-box'>
           <i className='fa-solid fa-user'></i>
         </div>
-        <h2>John Wan</h2>
+        <div className="name">
+        <h2> <strong> User</strong></h2>
+        </div>
       </div>
       <form className='search-box'>
-        <input type='text' placeholder='John Wan' />
+        <input type='text' placeholder='search bar' />
         <Button name='Search' />
       </form>
     </div>
   )
 }
 
-export default HorizontalNavbar
+export default HorizontalNavbar 

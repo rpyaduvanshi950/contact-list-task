@@ -6,8 +6,12 @@ import NavbarAndContactList from './NavbarAndContactList/NavbarAndContactList';
 const ContactListApp = () => {
     return (
         <div className='contact-list-app'>
+            <div>
             <HorizontalNavbar />
+            </div>
+            <div>
             <NavbarAndContactList />
+            </div>
         </div>
     )
 }

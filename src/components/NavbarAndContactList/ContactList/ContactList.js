@@ -33,11 +33,11 @@ const ContactList = () => {
           <table>
         <thead>
           <tr>
-            <th><p>Profile</p></th>
-            <th><p>Name</p></th>
-            <th><p>email</p></th>
-            <th><p>Mobile</p></th>
-            <th><p>Actions</p></th>
+            <th className="profile-column"><p>Profile</p></th>
+              <th className="name-column"><p>Name</p></th>
+              <th className="email-column"><p>Email</p></th>
+              <th className="mobile-column"><p>Mobile</p></th>
+              <th className="actions-column"><p>Actions</p></th>
           </tr>
         </thead>
        <ContactData contacts={contacts}/>

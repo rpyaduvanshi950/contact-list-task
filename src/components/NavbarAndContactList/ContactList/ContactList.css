@@ -1,44 +1,112 @@
-.contact-list{
-    height: 100%;
+.contact-list {
     width: 100%;
-    margin: 7px;
-    border-radius: 3px;
-    background-color: #fff;
-    border: 1px solid #d7dcdf;
-}
-
-.contact-list p,
-.contact-list h2,
-.contact-list .fa-solid {
-    color: #646464;
-}
-
-.contact-list .fa-solid {
-    margin-right: 15px;
-}
-
-.contact-list table {
+    overflow-x: auto;
+    margin: 20px 0;
+    color: black;
+  }
+  
+  .contact-list table {
     width: 100%;
+    color: black;
     border-collapse: collapse;
+  }
+  
+  .contact-list th, .contact-list td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: black;
+
+    /* border-radius: 33px; */
+  }
+  
+  .contact-list th {
+    /* background-color: dimgray; */
+    color: black;
+    /* color: #333; */
+  }
+  
+  .contact-list p {
+    margin: 0;
+    color: black;
+  }
+  
+  .contact-list td p {
+    display: flex;
+    align-items: center;
+    color: black;
+
+  }
+  
+  /* Profile column */
+  .contact-list th:first-child, .contact-list td:first-child {
+    width: 50px;
+    color: white;
     text-align: center;
-}
+  }
+  
+  /* Actions column */
+  .contact-list th:last-child, .contact-list td:last-child {
+    width: 100px;
+    text-align: center;
+    color: black;
 
-.contact-list th,
-.contact-list td{
-    padding: 8px;
-    border-bottom: 1px solid #ddd;
-}
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .contact-list th, .contact-list td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-list th, .contact-list td {
+      font-size: 12px;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .contact-list table, .contact-list thead, .contact-list tbody, .contact-list th, .contact-list td, .contact-list tr {
+      display: block;
+    color: black;
 
-.contact-list .profile-img-box {
-    margin-right: 0px;
-    margin-left: 10px;
-}
+    }
+  
+    .contact-list th {
+      display: none;
+    color: black;
 
-.fav-contact-list .profile-img-box{
-    margin-left: 30px;
-    margin-right: -20px;
-}
+    }
+  
+    .contact-list td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid black;
+    color: black;
 
-.contact-list .red-heart{
-    color:rgb(329,50,50);
-}
+    }
+  
+    .contact-list td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 50%;
+      flex: 0 0 50%;
+    color: black;
+
+    }
+  
+    .contact-list td:last-child {
+      justify-content: flex-end;
+    color: black;
+
+    }
+    
+  }
+  

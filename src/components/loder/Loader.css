@@ -1,0 +1,69 @@
+/* .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .loader-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3498db;
+    animation: write 2s ease-in-out infinite;
+  }
+  
+  @keyframes write {
+    0% {
+      content: "";
+    }
+    25% {
+      content: "W";
+    }
+    50% {
+      content: "We";
+    }
+    75% {
+      content: "Wel";
+    }
+    100% {
+      content: "Welcome";
+    }
+  }
+   */
+   .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #9178ff;
+  }
+  
+  .loader-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .loader-text span {
+    opacity: 1; /* make the text visible */
+  }
+  
+  .cursor {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -12,4 +12,4 @@ const VerticalNavbar = () => {
   )
 }
 
-export default VerticalNavbar
+export default VerticalNavbar 
